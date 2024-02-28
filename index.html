@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/static/css/stylesheet.css" />
+
+    <title>Instituto de Engenharia e Geociências</title>
+  </head>
+  <body>
+    <!-- Barra de Acessibilidade-->
+
+    <div id="acessibilidade" class="hidden-xs">
+      <div class="center-bar">
+        <ul class="row nav-space nav">
+          <li>
+            <a accesskey="1" href="#irconteudo" id="link-informe"
+              >Ir para o conteúdo <span>[1]</span></a
+            >
+          </li>
+          <li>
+            <a accesskey="2" href="#menu" id="link-nav"
+              >Ir para o menu <span>[2]</span></a
+            >
+          </li>
+          <li>
+            <a accesskey="3" href="#busca" id="link-busca"
+              >Ir para a busca <span>[3]</span></a
+            >
+          </li>
+          <li>
+            <a accesskey="4" href="#rodape" id="link-rodape"
+              >Ir para o rodapé <span>[4]</span></a
+            >
+          </li>
+          <li>
+            <a
+              accesskey="5"
+              href="#"
+              id="is-normal-contrast"
+              onclick="window.toggleContrast()"
+              >Alto contraste</a
+            >
+          </li>
+          <li>
+            <a accesskey="0" href="#" id="res-font" onclick="normalSizeFont()"
+              >A</a
+            >
+          </li>
+          <li>
+            <a
+              accesskey="-"
+              href="#"
+              id="dec-font"
+              onclick="decrementSizeFont()"
+              >A-</a
+            >
+          </li>
+          <li>
+            <a
+              accesskey="+"
+              href="#"
+              id="inc-font"
+              onclick="incrementSizeFont()"
+              >A+</a
+            >
+          </li>
+          <li>
+            <div id="google_translate_element"></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Fim da Barra de Acessibilidade -->
+
+    <!-- Barra do GOV -->
+    <div id="barra-brasil">
+      <ul id="menu-barra-temp">
+        <li>
+          <a href="http://brasil.gov.br">Portal do Governo Brasileiro</a>
+        </li>
+        <li>
+          <a href="http://epwg.governoeletronico.gov.br/barra/atualize.html"
+            >Atualize sua Barra de Governo</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- Fim da Barra do GOV-->
+
+    <!-- TOPO -->
+
+    <header id="topo-instituto">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm 4 logo">
+            <a href="http://www.ufopa.edu.br">
+              <img
+                id="logomarca-esquerda"
+                src=" /static/img/brasao.png "
+                class="img-responsive"
+                title="Universidade Federal do Oeste do Pará"
+                alt="Link para Universidade Federal do Oeste do Pará"
+              />
+            </a>
+          </div>
+          <div class="col-sm-4 titulo">
+            <p>UNIVERSIDADE FEDERAL DO OESTE DO PARÁ</p>
+            <h1 class="titulo-ufopa">PROGRAMA DE COMPUTAÇÃO - IEG</h1>
+          </div>
+          <div class="col-sm-4 logo">
+            <img
+              id="logomarca-ieg"
+              src="/static/img/programa.png "
+              class="img-responsive"
+              title="Instituto de Engenharia e Geociências"
+              alt="Logo do Instituto de Engenharia e Geociências"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Fim do Topo-->
+
+    <!-- Menu Principal-->
+
+    <div class="navbar">
+      <a href="#home">INÍCIO</a>
+      <a href="#sobre">SOBRE</a>
+      <div class="dropdown">
+        <button class="dropbtn">GRADUAÇÃO ▼</button>
+        <div class="dropdown-content">
+          <a href="#">Bacharelado em Ciência da Computação</a>
+          <a href="#">Bacharelado em Sistemas de Informação</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">PÓS-GRADUAÇÃO ▼</button>
+        <div class="dropdown-content">
+          <a href="#">Pós-Graduação em Ciência da Computação</a>
+          <a href="#">Especialização em Análise de Sistemas</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">PROJETOS ▼</button>
+        <div class="dropdown-content">
+          <a href="#">Ações de extensão</a>
+          <a href="#">Projetos de pesquisa</a>
+        </div>
+      </div>
+      <a href="#contatos">CONTATO</a>
+    </div>
+
+    <!-- Fim Menu Principal-->
+
+    <!-- Sessão de conteúdo Principal da pagina -->
+    <div class="conteudo"></div>
+
+    <div class="informes">
+      <div class="title-informe"><h2>INFORMES EM DESTAQUE</h2></div>
+      <div class="news-row">
+        <div class="news-item">
+          <img src="/static/img/informe.png" alt="Informe 1" />
+          <div class="news-item-title">
+            <div class="news-item-sub-title">
+              25 de Janeiro de 2024 às 15:59
+            </div>
+            LISTA DE DISCENTES DO IEG APTOS A OUTORGA 2023.1
+          </div>
+        </div>
+        <div class="news-item">
+          <img src="/static/img/informe.png" alt="Informe 2" />
+          <div class="news-item-title">
+            <div class="news-item-sub-title">
+              12 de Dezembro de 2023 às 16:47
+            </div>
+            EDITAL DE SELEÇÃO DE BOLSISTAS PARA ATUAR JUNTO AO PIAPE - PROGRAMA
+            DE INOVAÇÃO E ATUAÇÃO PROFISSIONAL EMPREENDEDORA.
+          </div>
+        </div>
+        <div class="news-item">
+          <img src="/static/img/informe.png" alt="Informe 3" />
+          <div class="news-item-title">
+            <div class="news-item-sub-title">21 de Junho de 2023 às 15:52</div>
+            EDITAL DO PROGRAMA DE EDUCAÇÃO TUTORIAL PET-IEG/B.I. EM TECNOLOGIA
+            DA INFORMAÇÃO
+          </div>
+        </div>
+        <div class="news-item">
+          <img src="/static/img/informe.png" alt="Informe 4" />
+          <div class="news-item-title">
+            <div class="news-item-sub-title">12 de Julho de 2023 às 15:28</div>
+            OPORTUNIDADE DE MESTRADO COM BOLSA, NA UNIPAMPA/RS
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="programas">
+      <div class="titles-row">
+        <div class="title">CURSOS DE GRADUAÇÃO</div>
+        <div class="title">CURSOS DE PÓS-GRADUAÇÃO</div>
+      </div>
+      <div class="rows">
+        <div class="course-item">
+          <img
+            src="/static/img/bcc.png"
+            alt="Bacharelado em Ciência da Computação"
+          />Bacharelado em Ciência da Computação
+        </div>
+        <div class="course-item">
+          <img
+            src="/static/img/pgcc.png"
+            alt="Pós-Graduação em Ciência da Computação"
+          />Pós-Graduação em Ciência da Computação
+        </div>
+      </div>
+
+      <div class="rows">
+        <div class="course-item">
+          <img
+            src="/static/img/bsi.png"
+            alt="Sistemas de Informação"
+          />Bacharelado em Sistemas de Informação
+        </div>
+        <div class="course-item">
+          <img
+            src="/static/img/eas.png"
+            alt="Especialização em Análise de Sistemas"
+          />Especialização em Análise de Sistemas
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-logo">
+        <img src="/static/img/brasao.png" alt="Logo" />
+      </div>
+      <div class="footer-content">
+        <div class="footer-section lg">
+          <h3>SOBRE O PROGRAMA</h3>
+          <!-- Conteúdo sobre o programa -->
+        </div>
+        <div class="footer-section">
+          <h3>GRADUAÇÃO</h3>
+          <ul>
+            <li>Bacharelado em Ciência da Computação</li>
+            <li>Bacharelado em Sistemas de Informação</li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>PÓS GRADUAÇÃO</h3>
+          <ul>
+            <li>Pós-graduação em Ciência da Computação</li>
+            <li>Especialização em Análise de Sistemas</li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>PROJETOS</h3>
+          <ul>
+            <li>Ações de extensão</li>
+            <li>Projetos de pesquisa</li>
+          </ul>
+        </div>
+        <div class="footer-section lg">
+          <h3>CONTATO</h3>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        INSTITUTO DE ENGENHARIA E GEOCIÊNCIAS<br />
+        Reitoria: Rua Vera Paz, s/n (Unidade Tapajós), Bairro Salé, CEP:
+        68035-110 | Telefone (93) 2101-4911 | E-mail: reitoria@ufopa.edu.br -
+        Santarém, Pará, Brasil<br />
+        © Todos os direitos reservados. Desenvolvido por UFOPA/CTIC
+      </div>
+    </footer>
+
+    <!-- SCRIPTS-->
+    <!-- Google Tradutor-->
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: 'en' },
+          'google_translate_element'
+        )
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+
+    <!-- Fim do Google Tradutor-->
+
+    <!-- Barra do Gov-->
+    <script
+      defer="defer"
+      src="//barra.brasil.gov.br/barra.js"
+      type="text/javascript"
+    ></script>
+    <!-- Fim da Barra do Gov-->
+
+    <!-- Barra de Acessibilidade-->
+    <script>
+      var Contrast = {
+        storage: 'contrastState',
+        cssClass: 'contrast',
+        currentState: null,
+        check: checkContrast,
+        getState: getContrastState,
+        setState: setContrastState,
+        toogle: toogleContrast,
+        updateView: updateViewContrast
+      }
+
+      const fontSize = 100
+      let size = fontSize
+      let increaseDecrease = 10
+
+      function incrementSizeFont() {
+        size += increaseDecrease
+        changeFont(size)
+      }
+
+      function decrementSizeFont() {
+        size -= increaseDecrease
+        changeFont(size)
+      }
+
+      function normalSizeFont() {
+        size = fontSize
+        changeFont(size)
+      }
+
+      function changeFont(size) {
+        document
+          .querySelector('html')
+          .setAttribute('style', `font-size: ${size}% !important`)
+        let acc = document.querySelectorAll('.acessibilidade-font')
+        if (acc) {
+          acc.forEach(el => {
+            el.setAttribute('style', `font-size: ${size}% !important`)
+          })
+        }
+      }
+
+      window.toggleContrast = function () {
+        Contrast.toogle()
+      }
+
+      Contrast.check()
+
+      function checkContrast() {
+        this.updateView()
+      }
+
+      function getContrastState() {
+        return localStorage.getItem(this.storage) === 'true'
+      }
+
+      function setContrastState(state) {
+        localStorage.setItem(this.storage, '' + state)
+        this.currentState = state
+        this.updateView()
+      }
+
+      function updateViewContrast() {
+        var body = document.body
+
+        if (!body) return
+
+        if (this.currentState === null) this.currentState = this.getState()
+
+        if (this.currentState) body.classList.add(this.cssClass)
+        else body.classList.remove(this.cssClass)
+      }
+
+      function toogleContrast() {
+        this.setState(!this.currentState)
+      }
+    </script>
+    <!-- Fim da Barra de Acessibilidade-->
+  </body>
+</html>
